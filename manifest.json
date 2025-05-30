@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Pomodoro Timer",
+  "version": "1.0",
+  "description": "Chrome 실행 시 자동으로 뽀모도로 타이머를 띄웁니다.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "notifications", "alarms"],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
