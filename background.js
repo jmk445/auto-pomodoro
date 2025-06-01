@@ -18,8 +18,8 @@ function startPomodoro() {
   chrome.notifications.create("pomodoroStart", {
     type: "basic",
     iconUrl: "icon.png",
-    title: "Pomodoro 시작",
-    message: "25분 동안 집중하세요!",
+    title: "Pomodoro starts",
+    message: "Stay in focus for 25minutes",
     priority: 2
   });
 }
@@ -30,8 +30,8 @@ chrome.alarms.onAlarm.addListener((alarm) => {
     chrome.notifications.create("pomodoroEnd", {
       type: "basic",
       iconUrl: "icon.png",
-      title: "휴식 시간!",
-      message: "5분 동안 휴식하세요 ☕",
+      title: "time for rest!",
+      message: "Rest for 5 minutes  ☕",
       priority: 2
     });
   }

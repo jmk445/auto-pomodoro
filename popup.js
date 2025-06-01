@@ -16,7 +16,7 @@ document.getElementById("start").addEventListener("click", () => {
     } else {
       clearInterval(timer);
       timer = null;
-      alert("25분이 끝났습니다! 휴식하세요.");
+      alert("25 minutes passed. It's time to rest");
     }
   }, 1000);
 });
